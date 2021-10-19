@@ -1,0 +1,12 @@
+.table {
+  width: 350px;
+  margin-top: 200px;
+}
+
+td {
+  width: 50px;
+}
+
+.result {
+  text-align: right;
+}

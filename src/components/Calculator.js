@@ -2,43 +2,44 @@
 
 import React from 'react';
 import { Table } from 'reactstrap';
+import './calculator.css';
 
 export default class Calculator extends React.PureComponent {
   render() {
     return (
-      <Table bordered className="mx-auto w-25 text-center">
+      <Table bordered className="mx-auto text-center table lead">
         <tbody>
           <tr>
-            <td className="bg-secondary text-" colSpan="4">Result</td>
+            <td className="bg-secondary py-3 text-light display-6 result" colSpan="4">0</td>
           </tr>
           <tr>
-            <td className="bg-light">AC</td>
-            <td className="bg-light">+/-</td>
-            <td className="bg-light">%</td>
-            <td className="bg-warning">÷</td>
+            <td className="bg-light py-3">AC</td>
+            <td className="bg-light py-3">+/-</td>
+            <td className="bg-light py-3">%</td>
+            <td className="bg-warning py-3">÷</td>
           </tr>
           <tr>
-            <td className="bg-light">7</td>
-            <td className="bg-light">8</td>
-            <td className="bg-light">9</td>
-            <td className="bg-warning">x</td>
+            <td className="bg-light py-3">7</td>
+            <td className="bg-light py-3">8</td>
+            <td className="bg-light py-3">9</td>
+            <td className="bg-warning py-3">x</td>
           </tr>
           <tr>
-            <td className="bg-light">4</td>
-            <td className="bg-light">5</td>
-            <td className="bg-light">6</td>
-            <td className="bg-warning">-</td>
+            <td className="bg-light py-3">4</td>
+            <td className="bg-light py-3">5</td>
+            <td className="bg-light py-3">6</td>
+            <td className="bg-warning py-3">-</td>
           </tr>
           <tr>
-            <td className="bg-light">1</td>
-            <td className="bg-light">2</td>
-            <td className="bg-light">3</td>
-            <td className="bg-warning">+</td>
+            <td className="bg-light py-3">1</td>
+            <td className="bg-light py-3">2</td>
+            <td className="bg-light py-3">3</td>
+            <td className="bg-warning py-3">+</td>
           </tr>
           <tr>
-            <td className="bg-light" colSpan="2">0</td>
-            <td className="bg-light">.</td>
-            <td className="bg-warning">=</td>
+            <td className="bg-light py-3" colSpan="2">0</td>
+            <td className="bg-light py-3">.</td>
+            <td className="bg-warning py-3">=</td>
           </tr>
         </tbody>
       </Table>
