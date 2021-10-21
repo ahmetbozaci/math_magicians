@@ -2,28 +2,33 @@
 
 import React, { Component } from 'react';
 import { Table, Button } from 'reactstrap';
-import './Calculator.css';
 import Calculate from '../logic/calculate';
+import './Calculator.css';
 
 export default class Calculator extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      total: 0,
+      total: null,
       next: null,
       operation: null,
     };
   }
 
-  onChangeHandler = (event) => {
+  setCalculatorObj = (event) => {
     const buttonName = event.target.name;
-    // eslint-disable-next-line
-    console.log('state:' , this.state);
-    // eslint-disable-next-line
-    const something = Calculate(this.state, buttonName);
-    // eslint-disable-next-line
-    console.log(something);
-    this.setState({ total: something.total, next: something.next, operation: something.operation });
+    const calculatorObj = this.state;
+    const obj = Calculate(calculatorObj, buttonName);
+    this.setState(
+      {
+        total: obj.total,
+        next: obj.next,
+        operation: obj.operation,
+      },
+      () => {
+        console.log('new', this.state);
+      },
+    );
   };
 
   render() {
@@ -56,109 +61,105 @@ export default class Calculator extends Component {
             </tr>
             <tr>
               <td className="bg-light py-3">
-                <Button type="button" name="AC" onClick={this.onChangeHandler}>
+                <Button type="button" name="AC" onClick={this.setCalculatorObj}>
                   AC
                 </Button>
               </td>
               <td className="bg-light py-3">
-                <Button
-                  type="button"
-                  name="+/-"
-                  onClick={this.onChangeHandler}
-                >
+                <Button type="button" name="+/-" onClick={this.setCalculatorObj}>
                   +/-
                 </Button>
               </td>
               <td className="bg-light py-3">
-                <Button type="button" name="%" onClick={this.onChangeHandler}>
+                <Button type="button" name="%" onClick={this.setCalculatorObj}>
                   %
                 </Button>
               </td>
               <td className="bg-warning py-3">
-                <Button type="button" name="÷" onClick={this.onChangeHandler}>
+                <Button type="button" name="÷" onClick={this.setCalculatorObj}>
                   ÷
                 </Button>
               </td>
             </tr>
             <tr>
               <td className="bg-light py-3">
-                <Button type="button" name="7" onClick={this.onChangeHandler}>
+                <Button type="button" name="7" onClick={this.setCalculatorObj}>
                   7
                 </Button>
               </td>
               <td className="bg-light py-3">
-                <Button type="button" name="8" onClick={this.onChangeHandler}>
+                <Button type="button" name="8" onClick={this.setCalculatorObj}>
                   8
                 </Button>
               </td>
               <td className="bg-light py-3">
-                <Button type="button" name="9" onClick={this.onChangeHandler}>
+                <Button type="button" name="9" onClick={this.setCalculatorObj}>
                   9
                 </Button>
               </td>
               <td className="bg-warning py-3">
-                <Button type="button" name="x" onClick={this.onChangeHandler}>
+                <Button type="button" name="x" onClick={this.setCalculatorObj}>
                   x
                 </Button>
               </td>
             </tr>
             <tr>
               <td className="bg-light py-3">
-                <Button type="button" name="4" onClick={this.onChangeHandler}>
+                <Button type="button" name="4" onClick={this.setCalculatorObj}>
                   4
                 </Button>
               </td>
               <td className="bg-light py-3">
-                <Button type="button" name="5" onClick={this.onChangeHandler}>
+                <Button type="button" name="5" onClick={this.setCalculatorObj}>
                   5
                 </Button>
               </td>
               <td className="bg-light py-3">
-                <Button type="button" name="6" onClick={this.onChangeHandler}>
+                <Button type="button" name="6" onClick={this.setCalculatorObj}>
                   6
                 </Button>
               </td>
               <td className="bg-warning py-3">
-                <Button type="button" name="-" onClick={this.onChangeHandler}>
+                <Button type="button" name="-" onClick={this.setCalculatorObj}>
                   -
                 </Button>
               </td>
             </tr>
             <tr>
               <td className="bg-light py-3">
-                <Button type="button" name="1" onClick={this.onChangeHandler}>
+                <Button type="button" name="1" onClick={this.setCalculatorObj}>
                   1
                 </Button>
               </td>
               <td className="bg-light py-3">
-                <Button type="button" name="2" onClick={this.onChangeHandler}>
+                <Button type="button" name="2" onClick={this.setCalculatorObj}>
                   2
                 </Button>
               </td>
               <td className="bg-light py-3">
-                <Button type="button" name="3" onClick={this.onChangeHandler}>
+                <Button type="button" name="3" onClick={this.setCalculatorObj}>
                   3
                 </Button>
               </td>
               <td className="bg-warning py-3">
-                <Button type="button" name="+" onClick={this.onChangeHandler}>
+                <Button type="button" name="+" onClick={this.setCalculatorObj}>
                   +
                 </Button>
               </td>
             </tr>
             <tr>
               <td className="bg-light py-3" colSpan="2">
-                <Button type="button" name="0" onClick={this.onChangeHandler}>
+                <Button type="button" name="0" onClick={this.setCalculatorObj}>
                   0
                 </Button>
               </td>
               <td className="bg-light py-3">
-                <Button type="button" name="." onClick={this.onChangeHandler}>
+                <Button type="button" name="." onClick={this.setCalculatorObj}>
                   .
                 </Button>
               </td>
               <td className="bg-warning py-3">
-                <Button type="button" name="=" onClick={this.onChangeHandler}>
+                <Button type="button" name="=" onClick={this.setCalculatorObj}>
                   =
                 </Button>
               </td>
