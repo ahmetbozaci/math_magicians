@@ -2,52 +2,41 @@
 
 # Math Magicians
 
-![screenshot-1]()
+<!-- ![screenshot-1]() -->
 ## Built With
 
 - Html
 - Javascript
 - React
+- JSX
 - CSS
+- Reactstrap
+- Bootstrap
 
-## Live Demo
+<!-- ## Live Demo
 
-[Math Magicians](CHANGE IT)
+[Math Magicians](CHANGE IT) -->
 
-## Clone This Project
+## Setup
+- Clone this project
 ```
 - $ git clone `$ https://github.com/ahmetbozaci/math_magicians.git`
 - $ cd math_magicians
 ```
+- Install npm packages
+```
+- $ npm install
+```
+- Open website
+```
+- $ npm start
+```
 ## Authors
 
 👤 **Ahmet Bozacı**
 - Github:[ahmtbozaci](https://github.com/ahmetbozaci)
 - Twitter:[ahmtbozaci](https://twitter.com/ahmtbozaci)
 - LinkedIn:[Ahmet Bozaci](https://www.linkedin.com/in/ahmetbozaci/)
-
-
-## Built With
-
-- Html
-- Javascript
-- React
-- CSS
-
-## Live Demo
-
-[Math Magicians](CHANGE IT)
-
-
-## Authors
-
-👤 **Ahmet Bozacı**
-- Github:[ahmtbozaci](https://github.com/ahmetbozaci)
-- Twitter:[ahmtbozaci](https://twitter.com/ahmtbozaci)
-- LinkedIn:[Ahmet Bozaci](https://www.linkedin.com/in/ahmetbozaci/)
-
-
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
