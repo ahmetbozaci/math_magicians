@@ -6,6 +6,7 @@
 .result {
   text-align: right;
   cursor: initial;
+  height: 65px;
 }
 
 td {
