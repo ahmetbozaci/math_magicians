@@ -18,15 +18,12 @@ export default class Calculator extends Component {
   setCalculatorObj = (event) => {
     const buttonName = event.target.name;
     const calculatorObj = this.state;
-    const obj = Calculate(calculatorObj, buttonName);
+    const newCalculatorObj = Calculate(calculatorObj, buttonName);
     this.setState(
       {
-        total: obj.total,
-        next: obj.next,
-        operation: obj.operation,
-      },
-      () => {
-        console.log('new', this.state);
+        total: newCalculatorObj.total,
+        next: newCalculatorObj.next,
+        operation: newCalculatorObj.operation,
       },
     );
   };
@@ -37,18 +34,6 @@ export default class Calculator extends Component {
     const { operation } = this.state;
     return (
       <div>
-        <p>
-          Total:
-          {total}
-        </p>
-        <p>
-          Next:
-          {next}
-        </p>
-        <p>
-          Operation:
-          {operation}
-        </p>
         <Table bordered className="text-center table lead mx-auto">
           <tbody>
             <tr>
@@ -57,6 +42,8 @@ export default class Calculator extends Component {
                 colSpan="4"
               >
                 {total}
+                {operation}
+                {next}
               </td>
             </tr>
             <tr>
@@ -66,7 +53,11 @@ export default class Calculator extends Component {
                 </Button>
               </td>
               <td className="bg-light py-3">
-                <Button type="button" name="+/-" onClick={this.setCalculatorObj}>
+                <Button
+                  type="button"
+                  name="+/-"
+                  onClick={this.setCalculatorObj}
+                >
                   +/-
                 </Button>
               </td>
