@@ -1,30 +1,49 @@
-import React from 'react';
+/** @format */
+
+import React, { Component } from 'react';
 import { Table, Button } from 'reactstrap';
 import './Calculator.css';
-// import Calculate from '../logic/calculate';
+import Calculate from '../logic/calculate';
 
-export default class Calculator extends React.PureComponent {
+export default class Calculator extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // buttonName: 0,
+      total: 0,
+      next: null,
+      operation: null,
     };
   }
 
   onChangeHandler = (event) => {
-    console.log(event);
-
-    // this.setState({ buttonName: event.target.name });
+    const buttonName = event.target.name;
+    // eslint-disable-next-line
+    console.log('state:' , this.state);
+    // eslint-disable-next-line
+    const something = Calculate(this.state, buttonName);
+    // eslint-disable-next-line
+    console.log(something);
+    this.setState({ total: something.total, next: something.next, operation: something.operation });
   };
 
   render() {
+    const { total } = this.state;
+    const { next } = this.state;
+    const { operation } = this.state;
     return (
       <div>
         <p>
-          Current Button:
-          {/* {this.state.buttonName} */}
+          Total:
+          {total}
         </p>
-
+        <p>
+          Next:
+          {next}
+        </p>
+        <p>
+          Operation:
+          {operation}
+        </p>
         <Table bordered className="text-center table lead mx-auto">
           <tbody>
             <tr>
@@ -32,7 +51,7 @@ export default class Calculator extends React.PureComponent {
                 className="bg-secondary text-light display-6 result"
                 colSpan="4"
               >
-                0
+                {total}
               </td>
             </tr>
             <tr>
@@ -44,7 +63,7 @@ export default class Calculator extends React.PureComponent {
               <td className="bg-light py-3">
                 <Button
                   type="button"
-                  name="+/-<"
+                  name="+/-"
                   onClick={this.onChangeHandler}
                 >
                   +/-
