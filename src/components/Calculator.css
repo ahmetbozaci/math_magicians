@@ -5,8 +5,10 @@
 
 .result {
   text-align: right;
+  cursor: initial;
+  height: 65px;
 }
 
 td {
-  width: 50px;
+  cursor: pointer;
 }
