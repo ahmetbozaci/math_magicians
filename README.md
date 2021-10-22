@@ -2,7 +2,7 @@
 
 # Math Magicians
 
-<!-- ![screenshot-1]() -->
+![image](image.gif)
 ## Built With
 
 - Html
