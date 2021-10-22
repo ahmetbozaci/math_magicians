@@ -3,7 +3,7 @@ import { Table, Button } from 'reactstrap';
 import Calculate from '../logic/calculate';
 import './Calculator.css';
 
-function Calculator() {
+const Calculator = () => {
   const [calculatorObj, setcalculatorObj] = useState({
     total: null,
     next: null,
@@ -210,6 +210,6 @@ function Calculator() {
       </tbody>
     </Table>
   );
-}
+};
 
 export default Calculator;
