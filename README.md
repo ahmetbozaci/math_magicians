@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Math Magicians
-
+<!--I use react step by step -->
 ![image](image.gif)
 ## Built With
 
