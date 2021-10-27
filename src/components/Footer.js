@@ -7,6 +7,10 @@ const Footer = () => {
   const footerStyle = {
     fontSize: '25px',
     color: '#726d6d',
+    position: 'absolute',
+    left: 0,
+    bottom: '20px',
+    right: 0,
   };
   const footerLink = {
     textDecoration: 'none',
