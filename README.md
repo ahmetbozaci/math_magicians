@@ -15,8 +15,8 @@
 
 ## Live Demo
 
-[Math Magicians-Netfliy](https://math-magicians-react.netlify.app/)
-[Math Magicians-Heroku](https://math-magicians-react.netlify.app/)
+- [Math Magicians-Netlify](https://math-magicians-react.netlify.app/)
+- [Math Magicians-Heroku](https://mathmagician-react-app.herokuapp.com/)
 
 ## Setup
 - Clone this project
