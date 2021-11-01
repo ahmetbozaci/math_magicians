@@ -13,9 +13,10 @@
 - Reactstrap
 - Bootstrap
 
-<!-- ## Live Demo
+## Live Demo
 
-[Math Magicians](CHANGE IT) -->
+[Math Magicians-Netfliy](https://math-magicians-react.netlify.app/)
+[Math Magicians-Heroku](https://math-magicians-react.netlify.app/)
 
 ## Setup
 - Clone this project
