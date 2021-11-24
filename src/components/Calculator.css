@@ -1,0 +1,13 @@
+.table {
+  width: 350px !important;
+}
+
+.result {
+  text-align: right;
+  cursor: initial;
+  height: 65px;
+}
+
+td {
+  cursor: pointer;
+}
