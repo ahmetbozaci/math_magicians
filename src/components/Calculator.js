@@ -1,8 +1,5 @@
-/* eslint-disable no-unused-vars */
-/** @format */
-
 import { useState } from 'react';
-import { Table, Button, Container } from 'reactstrap';
+import { Table, Container } from 'reactstrap';
 import Calculate from '../logic/calculate';
 import './Calculator.css';
 import Btn from './Button';
@@ -15,7 +12,6 @@ const Calculator = () => {
   });
 
   const updateCalculatorcalculatorObj = (e) => {
-    console.log(e);
     const buttonName = e.target.name;
     const calculatecalculatorObj = Calculate(calculatorObj, buttonName);
     setcalculatorObj(calculatecalculatorObj);
@@ -24,7 +20,6 @@ const Calculator = () => {
   return (
     <Container className="d-flex justify-content-around">
       <h1> Lets do some math!</h1>
-
       <Table bordered className="text-center lead">
         <tbody>
           <tr>

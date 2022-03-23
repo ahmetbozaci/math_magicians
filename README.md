@@ -7,7 +7,6 @@
 
 
 ## Built With
-- Html
 - Javascript
 - React
 - JSX
@@ -37,9 +36,9 @@
 ## Authors
 
 👤 **Ahmet Bozacı**
-- Github:[ahmtbozaci](https://github.com/ahmetbozaci)
-- Twitter:[ahmtbozaci](https://twitter.com/ahmtbozaci)
-- LinkedIn:[Ahmet Bozaci](https://www.linkedin.com/in/ahmetbozaci/)
+- [Github](https://github.com/ahmetbozaci)
+- [Twitter](https://twitter.com/ahmtbozaci)
+- [LinkedIn](https://www.linkedin.com/in/ahmetbozaci/)
 
 ## 🤝 Contributing
 
