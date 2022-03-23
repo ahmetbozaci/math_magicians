@@ -1,0 +1,373 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly App component 1`] = `
+Array [
+  <div
+    className="container"
+  >
+    <nav
+      className="my-5 navbar navbar-expand-md navbar-light bg-info"
+    >
+      <a
+        aria-current="page"
+        className="mx-4 navbar-brand active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Math Magicians
+      </a>
+      <ul
+        className="ms-auto mx-4 navbar-nav"
+      >
+        <li
+          className="nav-item"
+        >
+          <a
+            aria-current="page"
+            ckas={true}
+            className="nav-link active"
+            href="/"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Home
+          </a>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <a
+            aria-current={null}
+            ckas={true}
+            className="nav-link"
+            href="/calculator"
+            onClick={[Function]}
+          >
+            Calculator
+          </a>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <a
+            aria-current={null}
+            ckas={true}
+            className="nav-link"
+            href="/quote"
+            onClick={[Function]}
+          >
+            Quote
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>,
+  <div
+    className="mt-4 container"
+  >
+    <h1>
+      Invention of the mechanical calculator
+    </h1>
+    <article
+      className="my-4"
+    >
+      <p>
+        Blaise Pascal invented a mechanical calculator with a sophisticated carry mechanism in 1642. After three years of effort and 50 prototypes he introduced his calculator to the public. He built twenty of these machines in the following ten years. This machine could add and subtract two numbers directly and multiply and divide by repetition. Since, unlike Schickard's machine, the Pascaline dials could only rotate in one direction zeroing it after each calculation required the operator to dial in all 9s and then (method of re-zeroing) propagate a carry right through the machine. This suggests that the carry mechanism would have proved itself in practice many times over. This is a testament to the quality of the Pascaline because none of the 17th and 18th century criticisms of the machine mentioned a problem with the carry mechanism and yet it was fully tested on all the machines, by their resets, all the time.
+      </p>
+      <p>
+        Pascal's invention of the calculating machine, just three hundred years ago, was made while he was a youth of nineteen. He was spurred to it by seeing the burden of arithmetical labour involved in his father's official work as supervisor of taxes at Rouen. He conceived the idea of doing the work mechanically, and developed a design appropriate for this purpose; showing herein the same combination of pure science and mechanical genius that characterized his whole life. But it was one thing to conceive and design the machine, and another to get it made and put into use. Here were needed those practical gifts that he displayed later in his inventions...
+      </p>
+      <p>
+        Check the
+        <a
+          href="https://en.wikipedia.org/wiki/Mechanical_calculator#:~:text=Blaise%20Pascal%20invented%20a%20mechanical,in%20the%20following%20ten%20years."
+        >
+           
+          link
+           
+        </a>
+        for more information
+      </p>
+    </article>
+  </div>,
+  <div
+    className="text-center container"
+  >
+    <footer
+      style={
+        Object {
+          "bottom": "20px",
+          "color": "#726d6d",
+          "fontSize": "25px",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+        }
+      }
+    >
+      © Copyright 2021
+      <a
+        href="www.github.com/ahmetbozaci"
+        style={
+          Object {
+            "color": "#726d6d",
+            "paddingLeft": "10px",
+            "textDecoration": "none",
+          }
+        }
+      >
+        Ahmet Bozacı
+      </a>
+    </footer>
+  </div>,
+]
+`;
+
+exports[`renders correctly Apps 1`] = `
+Array [
+  <div
+    className="container"
+  >
+    <nav
+      className="my-5 navbar navbar-expand-md navbar-light bg-info"
+    >
+      <a
+        aria-current="page"
+        className="mx-4 navbar-brand active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Math Magicians
+      </a>
+      <ul
+        className="ms-auto mx-4 navbar-nav"
+      >
+        <li
+          className="nav-item"
+        >
+          <a
+            aria-current="page"
+            ckas={true}
+            className="nav-link active"
+            href="/"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Home
+          </a>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <a
+            aria-current={null}
+            ckas={true}
+            className="nav-link"
+            href="/calculator"
+            onClick={[Function]}
+          >
+            Calculator
+          </a>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <a
+            aria-current={null}
+            ckas={true}
+            className="nav-link"
+            href="/quote"
+            onClick={[Function]}
+          >
+            Quote
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>,
+  <div
+    className="mt-4 container"
+  >
+    <h1>
+      Invention of the mechanical calculator
+    </h1>
+    <article
+      className="my-4"
+    >
+      <p>
+        Blaise Pascal invented a mechanical calculator with a sophisticated carry mechanism in 1642. After three years of effort and 50 prototypes he introduced his calculator to the public. He built twenty of these machines in the following ten years. This machine could add and subtract two numbers directly and multiply and divide by repetition. Since, unlike Schickard's machine, the Pascaline dials could only rotate in one direction zeroing it after each calculation required the operator to dial in all 9s and then (method of re-zeroing) propagate a carry right through the machine. This suggests that the carry mechanism would have proved itself in practice many times over. This is a testament to the quality of the Pascaline because none of the 17th and 18th century criticisms of the machine mentioned a problem with the carry mechanism and yet it was fully tested on all the machines, by their resets, all the time.
+      </p>
+      <p>
+        Pascal's invention of the calculating machine, just three hundred years ago, was made while he was a youth of nineteen. He was spurred to it by seeing the burden of arithmetical labour involved in his father's official work as supervisor of taxes at Rouen. He conceived the idea of doing the work mechanically, and developed a design appropriate for this purpose; showing herein the same combination of pure science and mechanical genius that characterized his whole life. But it was one thing to conceive and design the machine, and another to get it made and put into use. Here were needed those practical gifts that he displayed later in his inventions...
+      </p>
+      <p>
+        Check the
+        <a
+          href="https://en.wikipedia.org/wiki/Mechanical_calculator#:~:text=Blaise%20Pascal%20invented%20a%20mechanical,in%20the%20following%20ten%20years."
+        >
+           
+          link
+           
+        </a>
+        for more information
+      </p>
+    </article>
+  </div>,
+  <div
+    className="text-center container"
+  >
+    <footer
+      style={
+        Object {
+          "bottom": "20px",
+          "color": "#726d6d",
+          "fontSize": "25px",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+        }
+      }
+    >
+      © Copyright 2021
+      <a
+        href="www.github.com/ahmetbozaci"
+        style={
+          Object {
+            "color": "#726d6d",
+            "paddingLeft": "10px",
+            "textDecoration": "none",
+          }
+        }
+      >
+        Ahmet Bozacı
+      </a>
+    </footer>
+  </div>,
+]
+`;
+
+exports[`renders correctly when there are no items 1`] = `
+Array [
+  <div
+    className="container"
+  >
+    <nav
+      className="my-5 navbar navbar-expand-md navbar-light bg-info"
+    >
+      <a
+        aria-current="page"
+        className="mx-4 navbar-brand active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Math Magicians
+      </a>
+      <ul
+        className="ms-auto mx-4 navbar-nav"
+      >
+        <li
+          className="nav-item"
+        >
+          <a
+            aria-current="page"
+            ckas={true}
+            className="nav-link active"
+            href="/"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Home
+          </a>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <a
+            aria-current={null}
+            ckas={true}
+            className="nav-link"
+            href="/calculator"
+            onClick={[Function]}
+          >
+            Calculator
+          </a>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <a
+            aria-current={null}
+            ckas={true}
+            className="nav-link"
+            href="/quote"
+            onClick={[Function]}
+          >
+            Quote
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>,
+  <div
+    className="mt-4 container"
+  >
+    <h1>
+      Invention of the mechanical calculator
+    </h1>
+    <article
+      className="my-4"
+    >
+      <p>
+        Blaise Pascal invented a mechanical calculator with a sophisticated carry mechanism in 1642. After three years of effort and 50 prototypes he introduced his calculator to the public. He built twenty of these machines in the following ten years. This machine could add and subtract two numbers directly and multiply and divide by repetition. Since, unlike Schickard's machine, the Pascaline dials could only rotate in one direction zeroing it after each calculation required the operator to dial in all 9s and then (method of re-zeroing) propagate a carry right through the machine. This suggests that the carry mechanism would have proved itself in practice many times over. This is a testament to the quality of the Pascaline because none of the 17th and 18th century criticisms of the machine mentioned a problem with the carry mechanism and yet it was fully tested on all the machines, by their resets, all the time.
+      </p>
+      <p>
+        Pascal's invention of the calculating machine, just three hundred years ago, was made while he was a youth of nineteen. He was spurred to it by seeing the burden of arithmetical labour involved in his father's official work as supervisor of taxes at Rouen. He conceived the idea of doing the work mechanically, and developed a design appropriate for this purpose; showing herein the same combination of pure science and mechanical genius that characterized his whole life. But it was one thing to conceive and design the machine, and another to get it made and put into use. Here were needed those practical gifts that he displayed later in his inventions...
+      </p>
+      <p>
+        Check the
+        <a
+          href="https://en.wikipedia.org/wiki/Mechanical_calculator#:~:text=Blaise%20Pascal%20invented%20a%20mechanical,in%20the%20following%20ten%20years."
+        >
+           
+          link
+           
+        </a>
+        for more information
+      </p>
+    </article>
+  </div>,
+  <div
+    className="text-center container"
+  >
+    <footer
+      style={
+        Object {
+          "bottom": "20px",
+          "color": "#726d6d",
+          "fontSize": "25px",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+        }
+      }
+    >
+      © Copyright 2021
+      <a
+        href="www.github.com/ahmetbozaci"
+        style={
+          Object {
+            "color": "#726d6d",
+            "paddingLeft": "10px",
+            "textDecoration": "none",
+          }
+        }
+      >
+        Ahmet Bozacı
+      </a>
+    </footer>
+  </div>,
+]
+`;
