@@ -1,9 +1,11 @@
+/* eslint-disable no-unused-vars */
 /** @format */
 
 import { useState } from 'react';
 import { Table, Button, Container } from 'reactstrap';
 import Calculate from '../logic/calculate';
 import './Calculator.css';
+import Btn from './Button';
 
 const Calculator = () => {
   const [calculatorObj, setcalculatorObj] = useState({
@@ -13,6 +15,7 @@ const Calculator = () => {
   });
 
   const updateCalculatorcalculatorObj = (e) => {
+    console.log(e);
     const buttonName = e.target.name;
     const calculatecalculatorObj = Calculate(calculatorObj, buttonName);
     setcalculatorObj(calculatecalculatorObj);
@@ -36,183 +39,69 @@ const Calculator = () => {
           </tr>
           <tr>
             <td className="bg-light py-3">
-              <Button
-                type="button"
-                name="AC"
-                onClick={updateCalculatorcalculatorObj}
-              >
-                AC
-              </Button>
+              <Btn name="AC" onClick={updateCalculatorcalculatorObj} />
             </td>
             <td className="bg-light py-3">
-              <Button
-                type="button"
-                name="+/-"
-                onClick={updateCalculatorcalculatorObj}
-              >
-                +/-
-              </Button>
+              <Btn name="+/-" onClick={updateCalculatorcalculatorObj} />
             </td>
             <td className="bg-light py-3">
-              <Button
-                type="button"
-                name="%"
-                onClick={updateCalculatorcalculatorObj}
-              >
-                %
-              </Button>
+              <Btn name="%" onClick={updateCalculatorcalculatorObj} />
             </td>
             <td className="bg-warning py-3">
-              <Button
-                type="button"
-                name="÷"
-                onClick={updateCalculatorcalculatorObj}
-              >
-                ÷
-              </Button>
+              <Btn name="÷" onClick={updateCalculatorcalculatorObj} />
             </td>
           </tr>
           <tr>
             <td className="bg-light py-3">
-              <Button
-                type="button"
-                name="7"
-                onClick={updateCalculatorcalculatorObj}
-              >
-                7
-              </Button>
+              <Btn name="7" onClick={updateCalculatorcalculatorObj} />
             </td>
             <td className="bg-light py-3">
-              <Button
-                type="button"
-                name="8"
-                onClick={updateCalculatorcalculatorObj}
-              >
-                8
-              </Button>
+              <Btn name="8" onClick={updateCalculatorcalculatorObj} />
             </td>
             <td className="bg-light py-3">
-              <Button
-                type="button"
-                name="9"
-                onClick={updateCalculatorcalculatorObj}
-              >
-                9
-              </Button>
+              <Btn name="9" onClick={updateCalculatorcalculatorObj} />
             </td>
             <td className="bg-warning py-3">
-              <Button
-                type="button"
-                name="x"
-                onClick={updateCalculatorcalculatorObj}
-              >
-                x
-              </Button>
+              <Btn name="x" onClick={updateCalculatorcalculatorObj} />
             </td>
           </tr>
           <tr>
             <td className="bg-light py-3">
-              <Button
-                type="button"
-                name="4"
-                onClick={updateCalculatorcalculatorObj}
-              >
-                4
-              </Button>
+              <Btn name="4" onClick={updateCalculatorcalculatorObj} />
             </td>
             <td className="bg-light py-3">
-              <Button
-                type="button"
-                name="5"
-                onClick={updateCalculatorcalculatorObj}
-              >
-                5
-              </Button>
+              <Btn name="5" onClick={updateCalculatorcalculatorObj} />
             </td>
             <td className="bg-light py-3">
-              <Button
-                type="button"
-                name="6"
-                onClick={updateCalculatorcalculatorObj}
-              >
-                6
-              </Button>
+              <Btn name="6" onClick={updateCalculatorcalculatorObj} />
             </td>
             <td className="bg-warning py-3">
-              <Button
-                type="button"
-                name="-"
-                onClick={updateCalculatorcalculatorObj}
-              >
-                -
-              </Button>
+              <Btn name="-" onClick={updateCalculatorcalculatorObj} />
             </td>
           </tr>
           <tr>
             <td className="bg-light py-3">
-              <Button
-                type="button"
-                name="1"
-                onClick={updateCalculatorcalculatorObj}
-              >
-                1
-              </Button>
+              <Btn name="1" onClick={updateCalculatorcalculatorObj} />
             </td>
             <td className="bg-light py-3">
-              <Button
-                type="button"
-                name="2"
-                onClick={updateCalculatorcalculatorObj}
-              >
-                2
-              </Button>
+              <Btn name="2" onClick={updateCalculatorcalculatorObj} />
             </td>
             <td className="bg-light py-3">
-              <Button
-                type="button"
-                name="3"
-                onClick={updateCalculatorcalculatorObj}
-              >
-                3
-              </Button>
+              <Btn name="3" onClick={updateCalculatorcalculatorObj} />
             </td>
             <td className="bg-warning py-3">
-              <Button
-                type="button"
-                name="+"
-                onClick={updateCalculatorcalculatorObj}
-              >
-                +
-              </Button>
+              <Btn name="+" onClick={updateCalculatorcalculatorObj} />
             </td>
           </tr>
           <tr>
             <td className="bg-light py-3" colSpan="2">
-              <Button
-                type="button"
-                name="0"
-                onClick={updateCalculatorcalculatorObj}
-              >
-                0
-              </Button>
+              <Btn name="0" onClick={updateCalculatorcalculatorObj} />
             </td>
             <td className="bg-light py-3">
-              <Button
-                type="button"
-                name="."
-                onClick={updateCalculatorcalculatorObj}
-              >
-                .
-              </Button>
+              <Btn name="." onClick={updateCalculatorcalculatorObj} />
             </td>
             <td className="bg-warning py-3">
-              <Button
-                type="button"
-                name="="
-                onClick={updateCalculatorcalculatorObj}
-              >
-                =
-              </Button>
+              <Btn name="=" onClick={updateCalculatorcalculatorObj} />
             </td>
           </tr>
         </tbody>
