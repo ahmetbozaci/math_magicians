@@ -21,7 +21,7 @@
 ## Setup
 - Clone this project
 ```
-- $ git clone `$ https://github.com/ahmetbozaci/math_magicians.git`
+- $ git clone https://github.com/ahmetbozaci/math_magicians.git
 - $ cd math_magicians
 ```
 - Install npm packages
@@ -32,7 +32,10 @@
 ```
 - $ npm start
 ```
-
+## Test
+```
+- $ npm run test
+```
 ## Authors
 
 👤 **Ahmet Bozacı**
